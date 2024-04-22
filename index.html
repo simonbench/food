@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simobench</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="home">
+    <nav>
+      <a href="index.html" class="logo"><i class='bx bxs-bowl-rice' id="logo"></i><h3>FOOD</h3></a>
+      <div class="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Produits</a>
+        <a href="#about">A propos</a>
+        <a href="#reviews">Les avis</a>
+      </div>
+      <i class='bx bx-menu' id="burger"></i>
+      <div class="user">
+        <img src="images/avis-01.jpg" alt="">
+        <div class="test">
+        <span>Soraya Does</span>
+        <i class='bx bxs-down-arrow'></i>
+        </div>
+      </div>
+    </nav>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="text">
+            <span>VOUS AVEZ LE CHOIX</span>
+            <h1>Destination Gourmande Incontournable !</h1>
+            <a href="#">Voir burgers<i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+          <div class="image">
+            <img src="images/Burger-01.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text">
+            <span>VOUS AVEZ LE CHOIX</span>
+            <h1>Notre Univers Burgers Vous Attends</h1>
+            <a href="#">Voir burgers<i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+          <div class="image">
+            <img src="images/Burger-02.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text">
+            <span>VOUS AVEZ LE CHOIX</span>
+            <h1>Votre Bonheur Burger Commence Ici</h1>
+            <a href="#">Voir burgers<i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+          <div class="image">
+            <img src="images/Burger-03.png" alt="">
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <img src="images/right.png" alt="">
+      </div>
+      <div class="swiper-button-prev">
+        <img src="images/left.png" alt="">
+      </div>
+    </div>
+  </header>
+  <section id="categories">
+    <div class="title">
+      <h1>Découvrez nos <span>catégories</span></h1>
+      <a href="#home"><i class='bx bx-right-arrow-alt' id="right"></i></a>
+    </div>
+    <div class="container">
+      <div class="card one">
+        <img src="images/Cat-01.png" alt="">
+        <div class="titles">
+          <h3>Les burgers</h3>
+          <span>30 produits</span>
+        </div>
+        <i class='bx bx-right-arrow-alt' id="right"></i>
+      </div>
+      <div class="card two">
+        <img src="images/Cat-02.png" alt="">
+        <div class="titles">
+          <h3>Les croissants</h3>
+          <span>35 produits</span>
+        </div>
+        <i class='bx bx-right-arrow-alt' id="right"></i>
+      </div>
+      <div class="card three">
+        <img src="images/Cat-03.png" alt="">
+        <div class="titles">
+          <h3>Les salades</h3>
+          <span>15 produits</span>
+        </div>
+        <i class='bx bx-right-arrow-alt' id="right"></i>
+      </div>
+      <div class="card foor">
+        <img src="images/Cat-04.png" alt="">
+        <div class="titles">
+          <h3>Les frites</h3>
+          <span>20 produits</span>
+        </div>
+        <i class='bx bx-right-arrow-alt' id="right"></i>
+      </div>
+      <div class="card five">
+        <img src="images/Cat-05.png" alt="">
+        <div class="titles">
+          <h3>Les boissons</h3>
+          <span>20 produits</span>
+        </div>
+        <i class='bx bx-right-arrow-alt' id="right"></i>
+      </div>
+    </div>
+  </section>
+  <section id="products">
+    <div class="titles">
+      <h1>Les plus <span>populaires</span></h1>
+      <a href="#home"><i class='bx bx-right-arrow-alt' id="right"></i></a>
+    </div>
+    <div class="content">
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-01.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>Chicken burger</h2>
+        <span class="price">7.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-02.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>HotDog</h2>
+        <span class="price">5.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-03.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>Special croque</h2>
+        <span class="price">9.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-04.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>Soupe du pays</h2>
+        <span class="price">7.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-05.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>Crevettes thai</h2>
+        <span class="price">11.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+      <div class="carte">
+        <i class='bx bxs-heart' id="heart"></i>
+        <div class="image">
+          <img src="images/prod-06.png" alt="">
+        </div>
+        <span>Burgers</span>
+        <h2>Chicken wings</h2>
+        <span class="price">8.99$</span>
+        <span class="promo">-10%</span>
+        <i class='bx bx-cart-add' id="cart"></i>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <img src="images/img-about.png" alt="">
+    <div class="text">
+      <span>A PROPOS</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis minus expedita eligendi possimus, rerum commodi repellat culpa cupiditate minima, doloribus impedit ratione recusandae quos necessitatibus veritatis incidunt illo omnis et non vitae accusantium dicta. Fugiat porro ipsam nisi necessitatibus obcaecati sed, consequuntur minima quod!</p>
+      <p class="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, numquam dicta.</p>
+      <a href="">En savoir plus<i class='bx bx-right-arrow-alt' id="right"></i></a>
+    </div>
+  </section>
+  <section id="reviews">
+    <h1>Ils ont étaient satisfait</h1>
+    <div class="container">
+      <div class="first">
+        <div class="marks">
+          <i class='bx bxs-quote-single-left'></i>
+          <i class='bx bxs-quote-single-left'></i>
+        </div>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quos. At similique nam nisi provident quasi itaque repellat, repellendus libero accusantium, quam exercitationem eum nostrum deserunt. Sunt nobis cumque vitae!</p>
+        <div class="user">
+          <img src="images/avis-01.jpg" alt="">
+          <h3>Justine Zoe</h3>
+        </div>
+      </div>
+      <div class="first">
+        <div class="marks">
+          <i class='bx bxs-quote-single-left'></i>
+          <i class='bx bxs-quote-single-left'></i>
+        </div>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quos. At similique nam nisi provident quasi itaque repellat, repellendus libero accusantium, quam exercitationem eum nostrum deserunt. Sunt nobis cumque vitae!</p>
+        <div class="user">
+          <img src="images/avis-02 (1).jpg" alt="">
+          <h3>Soraya Does</h3>
+        </div>
+      </div>
+      <div class="first">
+        <div class="marks">
+          <i class='bx bxs-quote-single-left'></i>
+          <i class='bx bxs-quote-single-left'></i>
+        </div>
+        <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quos. At similique nam nisi provident quasi itaque repellat, repellendus libero accusantium, quam exercitationem eum nostrum deserunt. Sunt nobis cumque vitae!</p>
+        <div class="user">
+          <img src="images/avis-02.jpg" alt="">
+          <h3>Carla Khui</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="first">
+      <a href="index.html" class="logo"><i class='bx bxs-bowl-rice' id="logo"></i><h3>FOODLAND</h3></a>
+      <span>75000 Paris (France)</span>
+      <div class="socials">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-twitter'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+        <a href=""><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+    <div class="second">
+      <span>Liens</span>
+      <div class="titles">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Produits</a>
+        <a href="#about">A propos</a>
+        <a href="#reviews">Les avis</a>
+      </div>
+    </div>
+    <div class="third">
+      <span>Infos</span>
+      <div class="settings">
+        <a href="">Paiements</a>
+        <a href="">Conditions de vente</a>
+        <a href="">Mentions légales</a>
+        <a href="">Politique de confidentialité</a>
+      </div>
+    </div>
+    <div class="forth">
+      <span>Newsletter</span>
+      <p>Ne ratez pas les nouveautés</p>
+      <form action="#">
+        <input type="email" placeholder="Indiquez votre e-mail" required>
+        <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+      </form>
+    </div>
+  </footer>
+  <div class="copy">
+    <p>&copy; Copyright - 2024 - Tous droits réservés - Simobench</p>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

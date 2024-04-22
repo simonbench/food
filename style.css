@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg: #700505;
+    --titles: #e99b9b;
+    --bg1: #ffdede;
+    --bg2: #fff8de;
+    --bg3: #e9ffde;
+    --bg4: #dee9ff;
+    --bg5: #ffdefe;
+    --promo: #d87503;
+    --color: #eeecec;
+    --menu: #6f6f6f;
+}
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+  html::-webkit-scrollbar-thumb{
+    background: var(--bg); 
+    border-radius: 3rem;
+}
+  html::-webkit-scrollbar-track{
+    background: var(--titles);
+}
+img{
+    width: 100%;
+}
+
+/*NAVIGATION*/
+
+header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6666666;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    background: #f1f1f1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+header nav a{
+    display: flex;
+    align-items: center;
+}
+header nav a #logo{
+    font-size: 2rem;
+    color: var(--bg);
+}
+header nav a h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+header nav .menu{
+    display: flex;
+    column-gap: .5rem;
+}
+header nav .menu a{
+    color: black;
+    padding: 0 15px;
+    border-radius: 50px;
+    transition: .4s ease-in-out;
+}
+header nav .menu a.active{
+    background: var(--bg);
+    color: var(--color);
+    border-radius: 20px;
+    padding: 7px 15px;
+}
+header nav .menu a:hover{
+    background: var(--bg);
+    color: var(--color);
+    border-radius: 20px;
+    padding: 7px 15px;
+}
+header nav #burger{
+    display: none;
+}
+header nav .user{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .user img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+header nav .user .test span{
+    font-size: .9rem;
+    padding-inline: 9px;
+}
+header nav .user .test i{
+    font-size: .6rem;
+}
+
+/* HEADER*/
+
+header .swiper{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+}
+header .swiper .swiper-wrapper .swiper-slide{
+    background: url(images/img-bg.jpg) center/cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    /*justify-content: center;*/
+    align-items: center;
+    padding-inline: 150px;
+}
+header .swiper .swiper-wrapper .swiper-slide .text span{
+    color: var(--titles);
+}
+header .swiper .swiper-wrapper .swiper-slide .text h1{
+    font-size: clamp(30px, 5vw, 60px);
+}
+header .swiper .swiper-wrapper .swiper-slide .text a{
+    background: var(--bg);
+    color: var(--color);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+section{
+    background: #f1f1f1;
+    padding: 90px 135px;
+}
+#categories .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#categories .title h1{
+    font-size: clamp(20px, 5vw, 30px);
+}
+#categories .title h1 span{
+    color: var(--titles);
+}
+#categories .title a i{
+    font-size: 1.1rem;
+    background: var(--bg);
+    color: white;
+    border-radius: 30px;
+    padding: 15px 70px;
+}
+#categories .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(181px, auto));
+    gap: 1rem;
+}
+#categories .container .card{
+    position: relative;
+    height: 200px;
+    border-radius: 7px;
+    /*padding: 40px;*/
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#categories .container .card img{
+    width: 100px;
+    padding: 1px;
+    object-fit: cover;
+    object-position: center;
+}
+#categories .container .card .titles{
+    text-align: center;
+}
+#categories .container .card .titles h3{
+    line-height: 5px;
+}
+#categories .container .card .titles span{
+    font-size: .7rem;
+}
+#categories .container .card #right{
+    position: absolute;
+    bottom: -15px;
+    font-size: 1rem;
+    color: #f1f1f1;
+    background: var(--bg);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+#categories .container .card #right:hover{
+    background: var(--titles);
+}
+#categories .container .card:hover #right{
+    opacity: 1;
+}
+#categories .container .one{
+    background: var(--bg1);
+}
+#categories .container .two{
+    background: var(--bg2);
+}
+#categories .container .three{
+    background: var(--bg3);
+}
+#categories .container .foor{
+    background: var(--bg4);
+}
+#categories .container .five{
+    background: var(--bg5);
+}
+#products .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#products .titles h1{
+    font-size: clamp(20px, 5vw, 30px);
+}
+#products .titles h1 span{
+    color: var(--titles);
+}
+#products .titles a #right{
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    background: var(--bg);
+    padding: 15px 70px;
+    border-radius: 30px;
+}
+#products .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(323px, auto));
+    gap: 1rem;
+    justify-content: center;
+}
+#products .content .carte{
+    position: relative;
+    height: 340px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+#products .content .carte #heart{
+    color: gray;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#products .content .carte #heart:hover{
+    color: brown;
+}
+#products .content .carte .image{
+    width: 200px;
+    margin: 0 auto;
+}
+#products .content .carte span{
+    font-size: .7rem;
+}
+#products .content .carte h2{
+    color: var(--titles);
+    font-size: 1.3rem;
+}
+#products .content .carte .price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: brown;
+}
+#products .content .carte .promo{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: .8rem;
+    color: gainsboro;
+    background: var(--promo);
+    padding: 7px 20px;
+}
+#products .content .carte #cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--bg);
+    color: gainsboro;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#products .content .carte #cart:hover{
+    background: var(--titles);
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    align-items: center;
+}
+#about .text span{
+    display: block;
+    color: var(--titles);
+    margin-bottom: 20px;
+}
+#about .text .second{
+    margin-top: 20px;
+}
+#about .text a{
+    display: inline-block;
+    background: var(--bg);
+    border-radius: 30px;
+    color: var(--color);
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+#about .text a:hover{
+    background: var(--titles);
+}
+#reviews h1{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+}
+#reviews .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(313px, auto));
+    gap: 1rem;
+    justify-content: center;
+}
+#reviews .container .first{
+    padding: 20px;
+    border-bottom: 9px solid var(--bg);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, .2);
+    transition: .4s ease-in-out;
+}
+#reviews .container .first:hover{
+    transform: translateY(-20px);
+}
+#reviews .container .first .marks{
+    display: flex;
+    margin-bottom: 10px;
+}
+#reviews .container .first .marks i{
+    color: var(--bg);
+}
+#reviews .container .first .stars i{
+    color: orange;
+}
+#reviews .container .first p{
+    font-size: .8rem;
+    margin: 15px 0;
+}
+#reviews .container .first .user{
+    display: flex;
+    align-items: center;
+}
+#reviews .container .first .user img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+footer{
+    background: var(--titles);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    justify-content: center;
+    /*align-items: center;*/
+    padding: 20px 0;
+}
+footer .first a{
+    display: flex;
+    align-items: center;
+    color: var(--bg);
+}
+footer .first a:hover h3{
+    color: var(--color);
+}
+footer .first a i{
+    font-size: 1.9rem;
+}
+footer .first span{
+    display: inline-block;
+    font-size: .8rem;
+    margin-bottom: 15px;
+}
+footer .first .socials{
+    display: flex;
+    gap: .5rem;
+}
+footer .first .socials a{
+    background: var(--color);
+    color: var(--bg);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .first .socials a:hover{
+    background: var(--bg);
+    color: var(--color);
+}
+footer .first .socials a i{
+    font-size: 1rem;
+}
+footer .second span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+footer .second .titles a{
+    display: flex;
+    flex-direction: column;
+    color: var(--bg);
+}
+footer .second .titles a:hover{
+    color: var(--color);
+}
+footer .third span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+footer .third .settings a{
+    display: flex;
+    flex-direction: column;
+    color: var(--bg);
+}
+footer .third .settings a:hover{
+    color: var(--color);
+}
+footer .forth span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+footer .forth p{
+    font-size: .8rem;
+}
+footer .forth form{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+footer .forth form input{
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid var(--bg);
+    background: transparent;
+    /*padding-bottom: 10px;*/
+    padding-left: 10px;
+    color: white;
+}
+footer .forth form button{
+    background: transparent;
+    cursor: pointer;
+}
+footer .forth form button i{
+    font-size: 1.5rem;
+}
+.copy{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy p{
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 920px) {
+    header nav{
+        height: 65px;
+        padding-inline: 20px;
+    }
+    header nav .menu{
+        position: absolute;
+        top: -500rem;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px 0;
+        background: #f1f1f1;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+        padding: 20px;
+        transition: .4s ease-in-out;
+    }
+    header nav .menu.active{
+        top: 100%;
+    }
+    header nav .menu a{
+        padding: 15px;
+        border-radius: 7px;
+    }
+    header nav .menu a:hover{
+        padding: 15px;
+        border-radius: 7px;
+    }
+    header nav .menu a.active{
+        padding: 15px;
+        border-radius: 7px;
+    }
+    header nav #burger{
+        display: block;
+        cursor: pointer;
+        font-size: 1.9rem;
+    }
+    header nav .user img{
+        margin-right: 9px;
+    }
+    header nav .user .test span{
+        display: none;
+    }
+    section{
+        padding-inline: 20px;
+    }
+    #about .text{
+        text-align: center;
+    }
+}
